@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KidCoder Tz — Shabani Hamidu</title>
+  <meta name="description" content="The digital home of Shabani Hamidu (KidCoder Tz). Developer, Creator, Explorer from Tanzania." />
+  <meta name="theme-color" content="#0B0B0B" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="logo">
+      <img src="logo-kidcoder.jpg" alt="KidCoder Tz" class="logo-img" />
+      <span>KIDCODER.SPACE</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#stack">Stack</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+
+  <!-- 01 HOME -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-series">
+          <img src="shabani-photo.jpg" alt="Shabani Hamidu" class="hero-photo active" data-index="0" />
+          <img src="hero.jpg" alt="Shabani — Vision" class="hero-photo" data-index="1" />
+        </div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-label">KidCoder Tz</p>
+        <h1>SHABANI<br />HAMIDU</h1>
+        <p class="hero-roles">Developer • Creator • Explorer</p>
+        <p class="hero-quote">"I build things that matter."</p>
+        <div class="hero-cta">
+          <a href="#about" class="btn btn-primary">Explore Me</a>
+          <a href="#projects" class="btn btn-ghost">My Work</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint">↓ Scroll</a>
+  </section>
+
+  <!-- 02 ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <p class="section-label">01 — About</p>
+      <h2>I'm Shabani Hamidu.</h2>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="about-roles">
+            Developer.<br />
+            Tech explorer.<br />
+            Builder.
+          </p>
+          <p class="about-desc">
+            I learn by building,<br />
+            experimenting and breaking things.
+          </p>
+          <p class="about-current">
+            <span>Currently exploring</span><br />
+            JavaScript • AI • Web • Backend
+          </p>
+        </div>
+        <div class="about-tags">
+          <div class="tag">📍 Kibiti, Pwani</div>
+          <div class="tag">🏠 Spencon</div>
+          <div class="tag">💻 Developer</div>
+          <div class="tag">🧠 Self-taught</div>
+          <div class="tag">🚀 Builder</div>
+          <div class="tag">🎮 Gamer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 GALLERY -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <p class="section-label">02 — Gallery</p>
+      <h2>Moments &amp; Memories</h2>
+      <div class="gallery-filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="life">Life</button>
+        <button class="filter" data-filter="tech">Tech</button>
+        <button class="filter" data-filter="projects">Projects</button>
+        <button class="filter" data-filter="moments">Moments</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="life moments" data-title="Portrait" data-meta="Kibiti • 2026">
+          <img src="shabani-photo.jpg" alt="Shabani Hamidu" />
+          <div class="gallery-overlay"><span>Portrait</span></div>
+        </div>
+        <div class="gallery-item" data-category="life moments" data-title="Dubai Dream" data-meta="Vision • 2026">
+          <img src="hero.jpg" alt="Shabani — Dubai vision" />
+          <div class="gallery-overlay"><span>Dubai Dream</span></div>
+        </div>
+        <div class="gallery-item" data-category="projects tech" data-title="SKONGA AI" data-meta="Logo • 2026">
+          <img src="skonga-logo.png" alt="SKONGA AI logo" class="logo-contain" />
+          <div class="gallery-overlay"><span>SKONGA AI</span></div>
+        </div>
+        <div class="gallery-item" data-category="tech projects" data-title="KidCoder Tz" data-meta="Brand • 2026">
+          <img src="logo-kidcoder.jpg" alt="KidCoder Tz logo" class="logo-contain" />
+          <div class="gallery-overlay"><span>KidCoder Tz</span></div>
+        </div>
+        <div class="gallery-item" data-category="life" data-title="Home Base" data-meta="Spencon, Kibiti">
+          <div class="placeholder-img">🏠</div>
+          <div class="gallery-overlay"><span>Home Base</span></div>
+        </div>
+        <div class="gallery-item" data-category="moments" data-title="First Deploy" data-meta="2026">
+          <div class="placeholder-img">🚀</div>
+          <div class="gallery-overlay"><span>First Deploy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">×</button>
+    <img src="" alt="" id="lightboxImg" />
+    <div class="lightbox-info">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxMeta"></p>
+    </div>
+    <button class="lightbox-nav prev" id="lightboxPrev">←</button>
+    <button class="lightbox-nav next" id="lightboxNext">→</button>
+  </div>
+
+  <!-- 04 PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <p class="section-label">03 — Projects</p>
+      <h2>Things I've Built</h2>
+      <div class="projects-list">
+        <article class="project-card">
+          <div class="project-logo">
+            <img src="skonga-logo.png" alt="SKONGA AI" />
+          </div>
+          <div class="project-body">
+            <span class="project-num">01</span>
+            <h3>SKONGA AI</h3>
+            <p class="project-tagline">Student Assistant</p>
+            <p class="project-tags">AI • Education • Web</p>
+            <p class="project-desc">An AI-powered assistant built to help students learn faster and smarter.</p>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <span class="project-num">02</span>
+          <div class="project-body">
+            <h3>SKONGA ACADEMY</h3>
+            <p class="project-tagline">Learn. Code. Build. Connect.</p>
+            <p class="project-tags">Education • Programming</p>
+            <p class="project-desc">A learning platform focused on practical coding and real projects.</p>
+            <a href="#" class="project-link">Explore →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <span class="project-num">03</span>
+          <div class="project-body">
+            <h3>EXPERIMENTS</h3>
+            <p class="project-tagline">Random things I build</p>
+            <p class="project-tags">Lab • Playground</p>
+            <p class="project-desc">Side experiments, broken ideas, and things I'm still figuring out.</p>
+            <a href="#gallery" class="project-link">Open Lab →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 JOURNEY -->
+  <section id="journey" class="section journey">
+    <div class="container">
+      <p class="section-label">04 — Journey</p>
+      <h2>My Path</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2025</span>
+          <div class="timeline-content">
+            <p>Started learning Web Development</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2026</span>
+          <div class="timeline-content">
+            <p>Deep dive into JavaScript</p>
+            <p>Built SKONGA AI</p>
+            <p>Explored AI tools &amp; agents</p>
+            <p>Started building my own digital products</p>
+          </div>
+        </div>
+        <div class="timeline-item future">
+          <span class="timeline-year">2027</span>
+          <div class="timeline-content">
+            <p>????</p>
+            <p class="muted">The story continues...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 STACK -->
+  <section id="stack" class="section stack">
+    <div class="container">
+      <p class="section-label">05 — Stack</p>
+      <h2>What I Use</h2>
+      <p class="stack-note">Currently learning &amp; building with</p>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <span class="stack-name">HTML / CSS</span>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+          <span class="stack-level">90%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">JavaScript</span>
+          <div class="bar"><div class="fill" style="width:70%"></div></div>
+          <span class="stack-level">70%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">Git + GitHub</span>
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+          <span class="stack-level">60%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">Firebase</span>
+          <div class="bar"><div class="fill" style="width:50%"></div></div>
+          <span class="stack-level">50%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">React</span>
+          <div class="bar"><div class="fill" style="width:40%"></div></div>
+          <span class="stack-level">40%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">Node / Backend</span>
+          <div class="bar"><div class="fill" style="width:50%"></div></div>
+          <span class="stack-level">50%</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-name">AI Tools</span>
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+          <span class="stack-level">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 CONNECT -->
+  <section id="connect" class="section connect">
+    <div class="container">
+      <p class="section-label">06 — Connect</p>
+      <h2>Let's Connect</h2>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-link">GitHub</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">Instagram</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link">YouTube</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">Facebook</a>
+      </div>
+      <button class="btn btn-primary copy-email" id="copyEmail">
+        Copy Email
+      </button>
+      <p class="email-feedback" id="emailFeedback"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Shabani Hamidu · KidCoder Tz</p>
+      <p class="footer-note">Built with curiosity from Spencon, Kibiti — Pwani 🇹🇿</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
